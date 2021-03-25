@@ -27,6 +27,15 @@ class AuthController extends Controller
     public function getFormLogin4()
     {
         return view('auth.login');
+
+    }
+
+    public function getFormLogin10()
+    {
+        $a = 10;
+        $b = 100;
+
+        return $a + $b;
     }
 
     public function submitLogin(Request $request)
