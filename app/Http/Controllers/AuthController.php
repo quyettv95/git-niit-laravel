@@ -24,6 +24,11 @@ class AuthController extends Controller
         return view('auth.login');
     }
 
+    public function getFormLogin4()
+    {
+        return view('auth.login');
+    }
+
     public function submitLogin(Request $request)
     {
     	$username =  $request->input('username');
